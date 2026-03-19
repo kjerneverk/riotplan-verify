@@ -25,7 +25,12 @@
     "precommit": "npm run build && npm run lint && npm run test",
     "prepublishOnly": "npm run clean && npm run build"
   },
-  "keywords": ["riotplan", "verification", "coverage", "acceptance-criteria"],
+  "keywords": [
+    "riotplan",
+    "verification",
+    "coverage",
+    "acceptance-criteria"
+  ],
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "repository": {
@@ -47,5 +52,8 @@
     "vite": "^7.0.4",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.17"
+  },
+  "publishConfig": {
+    "tag": "dev"
   }
 }
