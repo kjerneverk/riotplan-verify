@@ -12,12 +12,10 @@ import type { AcceptanceCriterion } from './types.js';
 interface PlanStep {
     number: number;
     filePath: string;
-    [key: string]: unknown;
 }
 
 interface Plan {
     steps: PlanStep[];
-    [key: string]: unknown;
 }
 
 /**
