@@ -1,6 +1,6 @@
 {
   "name": "@kjerneverk/riotplan-verify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Step verification and coverage checking for RiotPlan",
   "type": "module",
   "main": "./dist/index.js",
