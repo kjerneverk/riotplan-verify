@@ -1,6 +1,6 @@
 {
   "name": "@planvokter/riotplan-verify",
-  "version": "1.0.14-dev.0",
+  "version": "1.0.14",
   "description": "Step verification and coverage checking for RiotPlan",
   "type": "module",
   "main": "./dist/index.js",
@@ -23,7 +23,12 @@
     "precommit": "npm run build && npm run lint && npm run test",
     "prepublishOnly": "npm run clean && npm run build"
   },
-  "keywords": ["riotplan", "verification", "coverage", "acceptance-criteria"],
+  "keywords": [
+    "riotplan",
+    "verification",
+    "coverage",
+    "acceptance-criteria"
+  ],
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "repository": {
