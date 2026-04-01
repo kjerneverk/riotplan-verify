@@ -1,6 +1,6 @@
 {
-  "name": "@kjerneverk/riotplan-verify",
-  "version": "1.0.5",
+  "name": "@planvokter/riotplan-verify",
+  "version": "1.0.14",
   "description": "Step verification and coverage checking for RiotPlan",
   "type": "module",
   "main": "./dist/index.js",
@@ -16,12 +16,10 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run lint && vite build",
-    "test": "npm run test:coverage",
+    "build": "vite build",
+    "test": "vitest run --coverage",
     "test:coverage": "vitest run --coverage",
-    "test:debug": "vitest --run --coverage --reporter verbose",
     "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
     "precommit": "npm run build && npm run lint && npm run test",
     "prepublishOnly": "npm run clean && npm run build"
   },
@@ -35,9 +33,13 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kjerneverk/riotplan-verify"
+    "url": "https://github.com/planvokter/riotplan-verify"
   },
   "dependencies": {},
+  "publishConfig": {
+    "access": "public",
+    "tag": "dev"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.28.0",
@@ -52,8 +54,5 @@
     "vite": "^7.0.4",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.17"
-  },
-  "publishConfig": {
-    "tag": "dev"
   }
 }
